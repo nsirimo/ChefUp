@@ -21,7 +21,7 @@ namespace ChefUpHackPoly.Controllers
       _context = context;
     }
     [HttpGet]
-    public async Task<IActionResult> EmployeeList()
+    public async Task<IActionResult> RecipeList()
     {
       List<Recipe_Ingreidents> ilIst = new List<Recipe_Ingreidents>();
       var listData = await (from recipe in _context.Recipes
@@ -36,11 +36,13 @@ namespace ChefUpHackPoly.Controllers
                     ).ToListAsync();
       listData.ForEach(x =>
       {
-        Recipe_Ingreidents Obj = new Recipe_Ingreidents();
-        Obj.RecipeId = x.RecipeId;
-        Obj.RecipeName = x.RecipeName;
-        Obj.Ingredients = x.Ingredients;
-        Obj.CookTime = x.CookTime;
+        Recipe_Ingreidents Obj = new Recipe_Ingreidents
+        {
+          RecipeId = x.RecipeId,
+          RecipeName = x.RecipeName,
+          Ingredients = x.Ingredients,
+          CookTime = x.CookTime
+        };
         ilIst.Add(Obj);
       });
 

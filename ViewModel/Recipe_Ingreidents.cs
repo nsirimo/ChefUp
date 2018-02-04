@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChefUpHackPoly.ViewModel
 {
-    public class Recipe_Ingreidents : Controller
+    public class Recipe_Ingreidents
     {
     public int RecipeId { get; set; }
     public string RecipeName { get; set; }

@@ -1,27 +1,43 @@
-<div class="jumbotron container-fluid">
-  <div class="dropdown open">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true"
-      aria-expanded="false">
-      ChefUp
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#!">Action</a>
-      <a class="dropdown-item disabled" href="#!">Disabled action</a>
-    </div>
-  </div>
-  <div class="container text-center">
+<div class="container text-center">
     <h1>ChefUp</h1>
     <p>Mission, Vision & Meals</p>
   </div>
   <input #box (keyup.enter)="onEnter(box.value)">
-</div>
+
 
 <h3 class="text-center">Explore Recipes</h3>
 <div class="card">
-  <img class="card-img-top" src="/tacos.jpg" alt="Tacos">
   <div class="card-body">
-    <h4 class="card-title">Tacos Al Pastor</h4>
-    <p class="card-text">Delicious Tacos Al Pastor</p>
-    <a href="#!" class="btn btn-primary">See recipe</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            S.No.
+          </th>
+          <th>
+            RecipeName
+          </th>
+          <th>
+            Ingredients
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let repData of RecipeList; let i = index; trackBy: recipeId">
+
+
+          <td>
+            {{i+1}}
+          </td>
+          <td>
+            {{repData.recipeName}}
+          </td>
+          <td>
+            {{repData.ingredients}}
+          </td>
+        </tr>
+
+    </table>
   </div>
 </div>

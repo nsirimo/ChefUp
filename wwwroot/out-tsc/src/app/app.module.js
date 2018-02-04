@@ -10,9 +10,10 @@ var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
-var app_service_1 = require("./app.service");
+var app_service_1 = require("./Services/app.service");
 var router_1 = require("@angular/router");
 var app_homepage_component_1 = require("./home/app-homepage.component");
+var recipe_service_1 = require("./Services/recipe.service");
 var ROUTES = [
     { path: '', component: app_homepage_component_1.HomePageComponent }
 ];
@@ -30,7 +31,7 @@ var AppModule = /** @class */ (function () {
                 http_1.HttpModule,
                 router_1.RouterModule.forRoot(ROUTES)
             ],
-            providers: [app_service_1.AppService],
+            providers: [app_service_1.AppService, recipe_service_1.RecipeServices],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

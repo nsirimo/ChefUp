@@ -10,22 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var app_service_1 = require("./Services/app.service");
-var AppComponent = /** @class */ (function () {
-    function AppComponent(_appService) {
-        this._appService = _appService;
+var http_1 = require("@angular/http");
+require("rxjs/add/operator/catch");
+require("rxjs/add/operator/map");
+require("rxjs/add/observable/throw");
+var AppService = /** @class */ (function () {
+    function AppService(_http) {
+        this._http = _http;
     }
-    AppComponent.prototype.ngOnInit = function () {
-    };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        }),
-        __metadata("design:paramtypes", [app_service_1.AppService])
-    ], AppComponent);
-    return AppComponent;
+    AppService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], AppService);
+    return AppService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AppService = AppService;
+//# sourceMappingURL=app.service.js.map

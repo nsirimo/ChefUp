@@ -11,25 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-require("rxjs/add/operator/catch");
-require("rxjs/add/operator/map");
-require("rxjs/add/observable/throw");
-var AppService = /** @class */ (function () {
-    function AppService(_http) {
-        this._http = _http;
-        this._serviceUrl = 'api/hello';
+var RecipeServices = /** @class */ (function () {
+    function RecipeServices(http) {
+        this.http = http;
     }
-    AppService.prototype.sayHello = function () {
-        return this._http.get(this._serviceUrl)
-            .map(function (response) {
-            return response.text();
-        });
+    RecipeServices.prototype.getRecipeList = function () {
+        return this.http.get('http://localhost:56329/api/recipe');
     };
-    AppService = __decorate([
+    RecipeServices = __decorate([
         core_1.Injectable(),
         __metadata("design:paramtypes", [http_1.Http])
-    ], AppService);
-    return AppService;
+    ], RecipeServices);
+    return RecipeServices;
 }());
-exports.AppService = AppService;
-//# sourceMappingURL=app.service.js.map
+exports.RecipeServices = RecipeServices;
+//# sourceMappingURL=recipe.service.js.map

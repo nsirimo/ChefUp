@@ -11,15 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var recipe_service_1 = require("../Services/recipe.service");
 var HomePageComponent = /** @class */ (function () {
-    function HomePageComponent(_router) {
+    function HomePageComponent(_router, repService) {
+        var _this = this;
         this._router = _router;
-        this.userInput = '';
+        this.repService = repService;
+        this.RecipeList = [];
+        this.repService.getRecipeList()
+            .subscribe(function (data) { return (_this.RecipeList = data.json()); });
     }
-    HomePageComponent.prototype.onEnter = function (userInput) {
-        this.userInput = userInput;
-        console.log(userInput);
-    };
+    //userInput = '';
+    //onEnter(userInput: string) { 
+    //  this.userInput = userInput;
+    //  console.log(userInput);
+    //}
     HomePageComponent.prototype.ngOnInit = function () {
     };
     HomePageComponent = __decorate([
@@ -29,7 +35,7 @@ var HomePageComponent = /** @class */ (function () {
             styleUrls: ['../../../node_modules/bootstrap/dist/css/bootstrap.css',
                 'app-homepage.component.css']
         }),
-        __metadata("design:paramtypes", [router_1.Router])
+        __metadata("design:paramtypes", [router_1.Router, recipe_service_1.RecipeServices])
     ], HomePageComponent);
     return HomePageComponent;
 }());
