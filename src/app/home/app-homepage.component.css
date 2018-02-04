@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Bree Serif');
+
+#upper-page {
+    background: linear-gradient(to bottom, #5cdb95, #8ee4e4);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bree Serif';
+}
+
+.header {
+    font-size: 450%;
+}
+
+#title {
+    color: #e6e6fa;
+    font-weight: bold;
+    padding-top: 13%;
+    padding-bottom: 2%;
+}
+
+#title-description {
+    color: #e6e6fa;
+    padding-bottom: 2%;
+}
+
+.left-margin {
+    margin-left: 20%;
+}
+
+#search-bar {
+    width: 60%;
+    font-family: 'Bree Serif';
+    margin: auto;
+    display: block;
+	font-size: 25px;
+    padding: 15px;
+    margin-bottom: 10%;
+}

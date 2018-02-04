@@ -8,14 +8,6 @@ import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class AppService {
-    private _serviceUrl = 'api/hello';
-
     constructor(private _http: Http) { }
 
-    sayHello(): Observable <string>  {
-        return this._http.get(this._serviceUrl)
-            .map((response: Response) => {
-                return response.text();
-            });
-    }
 }
