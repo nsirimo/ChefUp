@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: 'app-homepage.component.html',
-  styleUrls: ['app-homepage.component.css']
+  styleUrls: ['../../../node_modules/bootstrap/dist/css/bootstrap.css']
 })
 export class HomePageComponent implements OnInit {
 

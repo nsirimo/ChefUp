@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h1>\n  ChefUp\n</h1>\n<router-outlet></router-outlet>"
+module.exports = "<h1>\n  ChefUp\n</h1>\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -189,28 +189,10 @@ var AppService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/home/app-homepage.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Welcome! Please type what ingreidents you have!</h3>\r\n<div class=\"search-container\">\r\n        <form action=\"/action_page.php\">\r\n          <input type=\"text\" placeholder=\"Search..\" name=\"search\">\r\n          <button type=\"submit\">Submit</button>\r\n        </form>\r\n      </div>"
+module.exports = "<h3>Welcome! Please type what ingreidents you have!</h3>\n<div class=\"search-container\">\n  <form action=\"/action_page.php\">\n    <input type=\"text\" placeholder=\"Search..\" name=\"search\">\n    <button type=\"submit\">Submit</button>\n  </form>\n</div>\n\n\n    <button class=\"btn btn-default\">CLICK ME!</button>\n "
 
 /***/ }),
 
@@ -242,7 +224,7 @@ var HomePageComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("./src/app/home/app-homepage.component.html"),
-            styles: [__webpack_require__("./src/app/home/app-homepage.component.css")]
+            styles: [__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
     ], HomePageComponent);
