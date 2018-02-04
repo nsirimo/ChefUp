@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n  ChefUp\n</h1>\n<router-outlet></router-outlet>"
+module.exports = "\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -192,7 +192,7 @@ var AppService = /** @class */ (function () {
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Welcome! Please type what ingreidents you have!</h3>\n<div class=\"search-container\">\n  <form action=\"/action_page.php\">\n    <input type=\"text\" placeholder=\"Search..\" name=\"search\">\n    <button type=\"submit\">Submit</button>\n  </form>\n</div>\n\n\n    <button class=\"btn btn-default\">CLICK ME!</button>\n "
+module.exports = "<div class=\"dropdown open\">\n  <button class=\"btn btn-secondary dropdown-toggle\"\n          type=\"button\" id=\"dropdownMenu5\" data-toggle=\"dropdown\"\n          aria-haspopup=\"true\" aria-expanded=\"false\">\n    ChefUp\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"#!\">Action</a>\n    <a class=\"dropdown-item disabled\" href=\"#!\">Disabled action</a>\n  </div>\n</div>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h1>ChefUp</h1>\n    <h2>Make cooking great again.</h2>\n  </div>\n\n<nav class=\"navbar navbar-light bg-light\">\n  <span class=\"navbar-text\">\n    Enter an ingredient or Dish.\n  </span>\n</nav>\n\n<div class=\"card\">\n  <img class=\"card-img-top\" src=\"/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/src/images/tacos.jpg\" alt=\"Tacos\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">Tacos Al Pastor</h4>\n    <p class=\"card-text\">\n      Delcious Tacos Al Pastor\n    </p>\n    <a href=\"#!\" class=\"btn btn-primary\">See receipe</a>\n  </div>\n</div>\n\n\n\n "
 
 /***/ }),
 
