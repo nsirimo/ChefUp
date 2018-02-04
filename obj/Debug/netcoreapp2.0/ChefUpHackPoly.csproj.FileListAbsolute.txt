@@ -8,3 +8,4 @@ C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHac
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfo.cs
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.dll
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
+C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.csprojResolveAssemblyReference.cache
