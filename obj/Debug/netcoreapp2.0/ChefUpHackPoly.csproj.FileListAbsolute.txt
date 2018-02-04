@@ -3,6 +3,7 @@ C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHac
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.runtimeconfig.dev.json
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.dll
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
+C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.csprojResolveAssemblyReference.cache
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.csproj.CoreCompileInputs.cache
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfoInputs.cache
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfo.cs

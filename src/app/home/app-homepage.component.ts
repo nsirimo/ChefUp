@@ -20,11 +20,16 @@ export class HomePageComponent implements OnInit {
 
   }
 
-  //userInput = '';
-  //onEnter(userInput: string) { 
-  //  this.userInput = userInput;
-  //  console.log(userInput);
-  //}
+  userInput = '';
+  onEnter(userInput: string) { 
+    this.userInput = userInput;
+    console.log(userInput);
+    this.repService.getRecipeList()
+      .subscribe(
+      (data: Response) => (this.RecipeList = data.json())
+      );
+  }
+
 
   ngOnInit() {
   }

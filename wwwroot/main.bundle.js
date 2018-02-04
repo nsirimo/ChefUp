@@ -113,7 +113,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<router-outlet></router-outlet>"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -219,7 +219,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "input {\r\n    margin: auto;\r\n    display: block;\r\n\tfont-size: 35px;\r\n\tpadding: 5px;\r\n}", ""]);
+exports.push([module.i, "@import url('https://fonts.googleapis.com/css?family=Bree Serif');\r\n\r\n#upper-page {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#5cdb95), to(#8ee4e4));\r\n    background: linear-gradient(to bottom, #5cdb95, #8ee4e4);\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n    font-family: 'Bree Serif';\r\n}\r\n\r\n.header {\r\n    font-size: 450%;\r\n}\r\n\r\n#title {\r\n    color: #e6e6fa;\r\n    font-weight: bold;\r\n    padding-top: 13%;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n#title-description {\r\n    color: #e6e6fa;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n.left-margin {\r\n    margin-left: 20%;\r\n}\r\n\r\n#search-bar {\r\n    width: 60%;\r\n    font-family: 'Bree Serif';\r\n    margin: auto;\r\n    display: block;\r\n\tfont-size: 25px;\r\n    padding: 15px;\r\n    margin-bottom: 10%;\r\n}", ""]);
 
 // exports
 
@@ -232,7 +232,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container text-center\">\r\n    <h1>ChefUp</h1>\r\n    <p>Mission, Vision & Meals</p>\r\n  </div>\r\n  <input #box (keyup.enter)=\"onEnter(box.value)\">\r\n\r\n\r\n<h3 class=\"text-center\">Explore Recipes</h3>\r\n<div class=\"card\">\r\n  <div class=\"card-body\">\r\n    <table class=\"table\">\r\n      <thead>\r\n        <tr>\r\n          <th>\r\n            S.No.\r\n          </th>\r\n          <th>\r\n            RecipeName\r\n          </th>\r\n          <th>\r\n            Ingredients\r\n          </th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n\r\n        <tr *ngFor=\"let repData of RecipeList; let i = index; trackBy: recipeId\">\r\n\r\n\r\n          <td>\r\n            {{i+1}}\r\n          </td>\r\n          <td>\r\n            {{repData.recipeName}}\r\n          </td>\r\n          <td>\r\n            {{repData.ingredients}}\r\n          </td>\r\n        </tr>\r\n\r\n    </table>\r\n  </div>\r\n</div>\r\n"
+module.exports = "  <div id=\"upper-page\">\r\n    <h1 id=\"title\" class=\"left-margin header\">ChefUp</h1>\r\n    <h2 id=\"title-description\" class=\"left-margin\">Find the best foods to eat</h2>\r\n    <input id=\"search-bar\" class=\"left-margin\" #box (keyup.enter)=\"onEnter(box.value)\" placeholder=\"Enter an ingredient, dish, cuisine, etc.\">\r\n    <hr>\r\n  </div>\r\n  <h1 class=\"text-center header\">Explore Recipes</h1>\r\n  <table class=\"table\">\r\n    <thead>\r\n      <tr>\r\n        <th>\r\n          S.No.\r\n        </th>\r\n        <th>\r\n          RecipeName\r\n        </th>\r\n        <th>\r\n          Ingredients\r\n        </th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n        <tr *ngFor=\"let repData of RecipeList; let i = index; trackBy: recipeId\">\r\n          <td>\r\n            {{i+1}}\r\n          </td>\r\n          <td>\r\n            {{repData.recipeName}}\r\n          </td>\r\n          <td>\r\n            {{repData.ingredients}}\r\n          </td>\r\n        </tr>\r\n\r\n</tbody>\r\n  </table>\r\n"
 
 /***/ }),
 
@@ -262,14 +262,17 @@ var HomePageComponent = /** @class */ (function () {
         this._router = _router;
         this.repService = repService;
         this.RecipeList = [];
+        this.userInput = '';
         this.repService.getRecipeList()
             .subscribe(function (data) { return (_this.RecipeList = data.json()); });
     }
-    //userInput = '';
-    //onEnter(userInput: string) { 
-    //  this.userInput = userInput;
-    //  console.log(userInput);
-    //}
+    HomePageComponent.prototype.onEnter = function (userInput) {
+        var _this = this;
+        this.userInput = userInput;
+        console.log(userInput);
+        this.repService.getRecipeList()
+            .subscribe(function (data) { return (_this.RecipeList = data.json()); });
+    };
     HomePageComponent.prototype.ngOnInit = function () {
     };
     HomePageComponent = __decorate([

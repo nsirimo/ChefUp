@@ -18,14 +18,17 @@ var HomePageComponent = /** @class */ (function () {
         this._router = _router;
         this.repService = repService;
         this.RecipeList = [];
+        this.userInput = '';
         this.repService.getRecipeList()
             .subscribe(function (data) { return (_this.RecipeList = data.json()); });
     }
-    //userInput = '';
-    //onEnter(userInput: string) { 
-    //  this.userInput = userInput;
-    //  console.log(userInput);
-    //}
+    HomePageComponent.prototype.onEnter = function (userInput) {
+        var _this = this;
+        this.userInput = userInput;
+        console.log(userInput);
+        this.repService.getRecipeList()
+            .subscribe(function (data) { return (_this.RecipeList = data.json()); });
+    };
     HomePageComponent.prototype.ngOnInit = function () {
     };
     HomePageComponent = __decorate([
