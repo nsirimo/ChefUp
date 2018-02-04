@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { AppService } from './app.service';
+import { AppService } from './services/app.service';
 import { Route, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home/app-homepage.component';
 

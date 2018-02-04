@@ -8,3 +8,13 @@ C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHac
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfo.cs
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.dll
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
+C:\Users\richa\source\repos\ChefUp\obj\Debug\netcoreapp2.0\ChefUpHackPoly.dll
+C:\Users\richa\source\repos\ChefUp\obj\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
+C:\Users\richa\source\repos\ChefUp\bin\Debug\netcoreapp2.0\ChefUpHackPoly.deps.json
+C:\Users\richa\source\repos\ChefUp\bin\Debug\netcoreapp2.0\ChefUpHackPoly.runtimeconfig.json
+C:\Users\richa\source\repos\ChefUp\bin\Debug\netcoreapp2.0\ChefUpHackPoly.runtimeconfig.dev.json
+C:\Users\richa\source\repos\ChefUp\bin\Debug\netcoreapp2.0\ChefUpHackPoly.dll
+C:\Users\richa\source\repos\ChefUp\bin\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
+C:\Users\richa\source\repos\ChefUp\obj\Debug\netcoreapp2.0\ChefUpHackPoly.csproj.CoreCompileInputs.cache
+C:\Users\richa\source\repos\ChefUp\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfoInputs.cache
+C:\Users\richa\source\repos\ChefUp\obj\Debug\netcoreapp2.0\ChefUpHackPoly.AssemblyInfo.cs
