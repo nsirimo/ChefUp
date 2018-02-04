@@ -8,7 +8,7 @@ export class RecipeServices {
   }
 
   getRecipeList() {
-    return this.http.get('http://localhost:56329/api/recipe');
+    return this.http.get('http://localhost:56329/api/recipe')
   }
 
 }   

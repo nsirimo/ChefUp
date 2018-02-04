@@ -169,12 +169,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_app_homepage_component__ = __webpack_require__("./src/app/home/app-homepage.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Services_recipe_service__ = __webpack_require__("./src/app/Services/recipe.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -196,7 +200,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_6__home_app_homepage_component__["a" /* HomePageComponent */]
             ],
             imports: [
+                __WEBPACK_IMPORTED_MODULE_8__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_9__angular_common__["b" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* RouterModule */].forRoot(ROUTES)
             ],
@@ -219,7 +225,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@import url('https://fonts.googleapis.com/css?family=Bree Serif');\r\n\r\n#upper-page {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#5cdb95), to(#8ee4e4));\r\n    background: linear-gradient(to bottom, #5cdb95, #8ee4e4);\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n    font-family: 'Bree Serif';\r\n}\r\n\r\n.header {\r\n    font-size: 450%;\r\n}\r\n\r\n#title {\r\n    color: #e6e6fa;\r\n    font-weight: bold;\r\n    padding-top: 13%;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n#title-description {\r\n    color: #e6e6fa;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n.left-margin {\r\n    margin-left: 20%;\r\n}\r\n\r\n#search-bar {\r\n    width: 60%;\r\n    font-family: 'Bree Serif';\r\n    margin: auto;\r\n    display: block;\r\n\tfont-size: 25px;\r\n    padding: 15px;\r\n    margin-bottom: 10%;\r\n}", ""]);
+exports.push([module.i, "@import url('https://fonts.googleapis.com/css?family=Bree Serif');\r\n\r\n#upper-page {\r\n    background: -webkit-gradient(linear, left top, left bottom, from(#5cdb95), to(#8ee4e4));\r\n    background: linear-gradient(to bottom, #5cdb95, #8ee4e4);\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n    font-family: 'Bree Serif';\r\n}\r\n\r\n.header {\r\n    font-size: 450%;\r\n}\r\n\r\n#title {\r\n    color: #e6e6fa;\r\n    font-weight: bold;\r\n    padding-top: 13%;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n#title-description {\r\n    color: #e6e6fa;\r\n    padding-bottom: 2%;\r\n}\r\n\r\n.left-margin {\r\n    margin-left: 20%;\r\n}\r\n\r\n#search-bar {\r\n    width: 60%;\r\n    font-family: 'Bree Serif';\r\n    margin: auto;\r\n    display: block;\r\n\tfont-size: 25px;\r\n    padding: 15px;\r\n    margin-bottom: 10%;\r\n}\r\n", ""]);
 
 // exports
 
@@ -232,7 +238,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "  <div id=\"upper-page\">\r\n    <h1 id=\"title\" class=\"left-margin header\">ChefUp</h1>\r\n    <h2 id=\"title-description\" class=\"left-margin\">Find the best foods to eat</h2>\r\n    <input id=\"search-bar\" class=\"left-margin\" #box (keyup.enter)=\"onEnter(box.value)\" placeholder=\"Enter an ingredient, dish, cuisine, etc.\">\r\n    <hr>\r\n  </div>\r\n  <h1 class=\"text-center header\">Explore Recipes</h1>\r\n  <table class=\"table\">\r\n    <thead>\r\n      <tr>\r\n        <th>\r\n          S.No.\r\n        </th>\r\n        <th>\r\n          RecipeName\r\n        </th>\r\n        <th>\r\n          Ingredients\r\n        </th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n\r\n\r\n        <tr *ngFor=\"let repData of RecipeList; let i = index; trackBy: recipeId\">\r\n          <td>\r\n            {{i+1}}\r\n          </td>\r\n          <td>\r\n            {{repData.recipeName}}\r\n          </td>\r\n          <td>\r\n            {{repData.ingredients}}\r\n          </td>\r\n        </tr>\r\n\r\n</tbody>\r\n  </table>\r\n"
+module.exports = "<div id=\"upper-page\">\r\n  <h1 id=\"title\" class=\"left-margin header\">ChefUp</h1>\r\n  <h2 id=\"title-description\" class=\"left-margin\">Find the best foods to eat</h2>\r\n  <input id=\"search-bar\" class=\"left-margin\" #box (keyup.enter)=\"onEnter(box.value)\" placeholder=\"Enter an ingredient, dish, cuisine, etc.\">\r\n  <hr>\r\n  </div>\r\n<h1 class=\"text-center header\">Explore Recipes</h1>\r\n<table class=\"table\">\r\n  <thead>\r\n    <tr>\r\n      <th>\r\n        S.No.\r\n      </th>\r\n      <th>\r\n        RecipeName\r\n      </th>\r\n      <th>\r\n        Ingredients\r\n      </th>\r\n    </tr>\r\n  </thead>\r\n  <tbody>\r\n\r\n\r\n    <tr *ngFor=\"let repData of RecipeList; let i = index; trackBy: recipeId\">\r\n      <td>\r\n        {{i+1}}\r\n      </td>\r\n      <td>\r\n        {{repData.recipeName}}\r\n      </td>\r\n      <td>\r\n        {{repData.ingredients}}\r\n      </td>\r\n    </tr>\r\n\r\n  </tbody>\r\n</table>\r\n"
 
 /***/ }),
 
@@ -320,7 +326,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });

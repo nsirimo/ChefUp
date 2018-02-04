@@ -6,6 +6,8 @@ import { AppService } from './Services/app.service';
 import { Route, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home/app-homepage.component';
 import { RecipeServices } from './Services/recipe.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const ROUTES: Route[] = [
   { path: '', component: HomePageComponent}
@@ -17,7 +19,9 @@ const ROUTES: Route[] = [
     HomePageComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
+    CommonModule,
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],

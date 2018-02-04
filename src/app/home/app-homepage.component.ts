@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Router } from '@angular/router';
-import { RecipeServices } from '../Services/recipe.service'
+import { RecipeServices } from '../Services/recipe.service';
+
 
 @Component({
   selector: 'app-home',
@@ -30,9 +31,7 @@ export class HomePageComponent implements OnInit {
       );
   }
 
-
   ngOnInit() {
   }
 
 }
-
