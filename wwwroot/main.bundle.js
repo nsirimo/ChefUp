@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h1>\n  ChefUp\n</h1>\n<router-outlet></router-outlet>"
+module.exports = "\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -189,28 +189,10 @@ var AppService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/home/app-homepage.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Welcome! Please type what ingreidents you have!</h3>\r\n<div class=\"search-container\">\r\n        <form action=\"/action_page.php\">\r\n          <input type=\"text\" placeholder=\"Search..\" name=\"search\">\r\n          <button type=\"submit\">Submit</button>\r\n        </form>\r\n      </div>"
+module.exports = "<div class=\"dropdown open\">\n  <button class=\"btn btn-secondary dropdown-toggle\"\n          type=\"button\" id=\"dropdownMenu5\" data-toggle=\"dropdown\"\n          aria-haspopup=\"true\" aria-expanded=\"false\">\n    ChefUp\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"#!\">Action</a>\n    <a class=\"dropdown-item disabled\" href=\"#!\">Disabled action</a>\n  </div>\n</div>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h1>ChefUp</h1>\n    <h2>Make cooking great again.</h2>\n  </div>\n\n<nav class=\"navbar navbar-light bg-light\">\n  <span class=\"navbar-text\">\n    Enter an ingredient or Dish.\n  </span>\n</nav>\n\n<div class=\"card\">\n  <img class=\"card-img-top\" src=\"/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/src/images/tacos.jpg\" alt=\"Tacos\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">Tacos Al Pastor</h4>\n    <p class=\"card-text\">\n      Delcious Tacos Al Pastor\n    </p>\n    <a href=\"#!\" class=\"btn btn-primary\">See receipe</a>\n  </div>\n</div>\n\n\n\n "
 
 /***/ }),
 
@@ -242,7 +224,7 @@ var HomePageComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("./src/app/home/app-homepage.component.html"),
-            styles: [__webpack_require__("./src/app/home/app-homepage.component.css")]
+            styles: [__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
     ], HomePageComponent);
