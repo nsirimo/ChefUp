@@ -14,14 +14,20 @@ var router_1 = require("@angular/router");
 var HomePageComponent = /** @class */ (function () {
     function HomePageComponent(_router) {
         this._router = _router;
+        this.userInput = '';
     }
+    HomePageComponent.prototype.onEnter = function (userInput) {
+        this.userInput = userInput;
+        console.log(userInput);
+    };
     HomePageComponent.prototype.ngOnInit = function () {
     };
     HomePageComponent = __decorate([
         core_1.Component({
             selector: 'app-home',
             templateUrl: 'app-homepage.component.html',
-            styleUrls: ['app-homepage.component.css']
+            styleUrls: ['../../../node_modules/bootstrap/dist/css/bootstrap.css',
+                'app-homepage.component.css']
         }),
         __metadata("design:paramtypes", [router_1.Router])
     ], HomePageComponent);

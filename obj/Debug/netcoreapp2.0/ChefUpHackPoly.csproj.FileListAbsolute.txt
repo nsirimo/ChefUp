@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.deps.json
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.runtimeconfig.json
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\bin\Debug\netcoreapp2.0\ChefUpHackPoly.runtimeconfig.dev.json
@@ -10,25 +9,3 @@ C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHac
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.dll
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.pdb
 C:\Users\nsirimongkol\Documents\ChefUpHackPoly\obj\Debug\netcoreapp2.0\ChefUpHackPoly.csprojResolveAssemblyReference.cache
-=======
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/bin/Debug/netcoreapp2.0/ChefUpHackPoly.deps.json
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/bin/Debug/netcoreapp2.0/ChefUpHackPoly.runtimeconfig.json
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/bin/Debug/netcoreapp2.0/ChefUpHackPoly.runtimeconfig.dev.json
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/bin/Debug/netcoreapp2.0/ChefUpHackPoly.dll
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/bin/Debug/netcoreapp2.0/ChefUpHackPoly.pdb
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/obj/Debug/netcoreapp2.0/ChefUpHackPoly.csproj.CoreCompileInputs.cache
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/obj/Debug/netcoreapp2.0/ChefUpHackPoly.AssemblyInfoInputs.cache
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/obj/Debug/netcoreapp2.0/ChefUpHackPoly.AssemblyInfo.cs
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/obj/Debug/netcoreapp2.0/ChefUpHackPoly.dll
-C:/Users/nsirimongkol/Documents/ChefUpHackPoly/obj/Debug/netcoreapp2.0/ChefUpHackPoly.pdb
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/bin/Debug/netcoreapp2.0/ChefUpHackPoly.deps.json
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/bin/Debug/netcoreapp2.0/ChefUpHackPoly.runtimeconfig.json
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/bin/Debug/netcoreapp2.0/ChefUpHackPoly.runtimeconfig.dev.json
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/bin/Debug/netcoreapp2.0/ChefUpHackPoly.dll
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/bin/Debug/netcoreapp2.0/ChefUpHackPoly.pdb
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/obj/Debug/netcoreapp2.0/ChefUpHackPoly.csproj.CoreCompileInputs.cache
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/obj/Debug/netcoreapp2.0/ChefUpHackPoly.AssemblyInfoInputs.cache
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/obj/Debug/netcoreapp2.0/ChefUpHackPoly.AssemblyInfo.cs
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/obj/Debug/netcoreapp2.0/ChefUpHackPoly.dll
-/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/obj/Debug/netcoreapp2.0/ChefUpHackPoly.pdb
->>>>>>> 200f50c09e2a49dce81c9749a2c08164a0c3823c

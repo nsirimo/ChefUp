@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<router-outlet></router-outlet>"
+module.exports = "\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -189,10 +189,28 @@ var AppService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/home/app-homepage.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "input {\r\n    margin: auto;\r\n    display: block;\r\n\tfont-size: 35px;\r\n\tpadding: 5px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ "./src/app/home/app-homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dropdown open\">\n  <button class=\"btn btn-secondary dropdown-toggle\"\n          type=\"button\" id=\"dropdownMenu5\" data-toggle=\"dropdown\"\n          aria-haspopup=\"true\" aria-expanded=\"false\">\n    ChefUp\n  </button>\n  <div class=\"dropdown-menu\">\n    <a class=\"dropdown-item\" href=\"#!\">Action</a>\n    <a class=\"dropdown-item disabled\" href=\"#!\">Disabled action</a>\n  </div>\n</div>\n<div class=\"container\">\n  <div class=\"jumbotron\">\n    <h1>ChefUp</h1>\n    <h2>Make cooking great again.</h2>\n  </div>\n\n<nav class=\"navbar navbar-light bg-light\">\n  <span class=\"navbar-text\">\n    Enter an ingredient or Dish.\n  </span>\n</nav>\n\n<div class=\"card\">\n  <img class=\"card-img-top\" src=\"/Users/anthonysoto/Documents/chefup-hackpoly/ChefUp/src/images/tacos.jpg\" alt=\"Tacos\">\n  <div class=\"card-body\">\n    <h4 class=\"card-title\">Tacos Al Pastor</h4>\n    <p class=\"card-text\">\n      Delcious Tacos Al Pastor\n    </p>\n    <a href=\"#!\" class=\"btn btn-primary\">See receipe</a>\n  </div>\n</div>\n\n\n\n "
+module.exports = "<div class=\"jumbotron container-fluid\">\r\n  <div class=\"dropdown open\">\r\n    <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenu5\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\r\n      aria-expanded=\"false\">\r\n      ChefUp\r\n    </button>\r\n    <div class=\"dropdown-menu\">\r\n      <a class=\"dropdown-item\" href=\"#!\">Action</a>\r\n      <a class=\"dropdown-item disabled\" href=\"#!\">Disabled action</a>\r\n    </div>\r\n  </div>\r\n  <div class=\"container text-center\">\r\n    <h1>ChefUp</h1>\r\n    <p>Mission, Vision & Meals</p>\r\n  </div>\r\n  <input #box (keyup.enter)=\"onEnter(box.value)\">\r\n</div>\r\n\r\n<h3 class=\"text-center\">Explore Recipes</h3>\r\n<div class=\"card\">\r\n  <img class=\"card-img-top\" src=\"/tacos.jpg\" alt=\"Tacos\">\r\n  <div class=\"card-body\">\r\n    <h4 class=\"card-title\">Tacos Al Pastor</h4>\r\n    <p class=\"card-text\">Delicious Tacos Al Pastor</p>\r\n    <a href=\"#!\" class=\"btn btn-primary\">See recipe</a>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -217,14 +235,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var HomePageComponent = /** @class */ (function () {
     function HomePageComponent(_router) {
         this._router = _router;
+        this.userInput = '';
     }
+    HomePageComponent.prototype.onEnter = function (userInput) {
+        this.userInput = userInput;
+        console.log(userInput);
+    };
     HomePageComponent.prototype.ngOnInit = function () {
     };
     HomePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("./src/app/home/app-homepage.component.html"),
-            styles: [__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css")]
+            styles: [__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css"), __webpack_require__("./src/app/home/app-homepage.component.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
     ], HomePageComponent);
