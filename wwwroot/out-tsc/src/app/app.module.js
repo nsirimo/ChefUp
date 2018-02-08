@@ -15,7 +15,7 @@ var router_1 = require("@angular/router");
 var app_homepage_component_1 = require("./home/app-homepage.component");
 var recipe_service_1 = require("./Services/recipe.service");
 var forms_1 = require("@angular/forms");
-var PipeModule_1 = require("./PipeModule");
+var common_1 = require("@angular/common");
 var ROUTES = [
     { path: '', component: app_homepage_component_1.HomePageComponent }
 ];
@@ -31,8 +31,8 @@ var AppModule = /** @class */ (function () {
             imports: [
                 forms_1.FormsModule,
                 platform_browser_1.BrowserModule,
+                common_1.CommonModule,
                 http_1.HttpModule,
-                PipeModule_1.SearchPipe,
                 router_1.RouterModule.forRoot(ROUTES)
             ],
             providers: [app_service_1.AppService, recipe_service_1.RecipeServices],

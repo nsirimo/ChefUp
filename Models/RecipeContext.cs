@@ -18,8 +18,10 @@ namespace ChefUpHackPoly.Models
         public int RecipeId { get; set; }
         public string RecipeName { get; set; }
         public int CookTime { get; set; }
+        public string DifficultyLevel { get; set; }
         public string Category { get; set; }
         public string Ingredients { get; set; }
+        public string Guide { get; set; }
     }
 
     public class Ingredient
